@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_icon_home"
+            android:title="首页" />
+        <item
+            android:id="@+id/nav_control"
+            android:icon="@drawable/nav_icon_yaokongqi"
+            android:title="遥控器" />
+        <item
+            android:id="@+id/nav_voice"
+            android:icon="@drawable/nav_icon_yuyin"
+            android:title="语音" />
+        <item
+            android:id="@+id/nav_fingdings"
+            android:icon="@drawable/nav_icon_faxian"
+            android:title="发现" />
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/nav_icon_gerenzhongxin"
+            android:title="个人中心 " />
+    </group>
+    <group
+        android:checkableBehavior="none"
+        android:id="@+id/group_settings">
+        <item android:id="@+id/nav_theme"
+            android:icon="@drawable/nav_icon_zhuti"
+            android:title="主题风格"/>
+        <item android:id="@+id/nav_night"
+            android:icon="@drawable/nav_icon_yejian"
+            android:title="夜间模式"/>
+        <item android:id="@+id/nav_setting"
+            android:icon="@drawable/nav_icon_shezhi"
+            android:title="设置"/>
+        <item android:id="@+id/nav_suggestion"
+            android:icon="@drawable/nav_icon_fankui"
+            android:title="意见反馈"/>
+        <item android:id="@+id/nav_about"
+            android:icon="@drawable/nav_icon_guanyu"
+            android:title="关于"/>
+
+    </group>
+</menu>

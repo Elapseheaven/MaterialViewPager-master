@@ -12,7 +12,8 @@ import android.view.ViewGroup;
 
 import com.github.florent37.materialviewpager.header.MaterialViewPagerHeaderDecorator;
 import com.github.florent37.materialviewpager.sample.R;
-import com.github.florent37.materialviewpager.sample.TestRecyclerViewAdapter;
+import com.github.florent37.materialviewpager.sample.adapter.TestRecyclerViewAdapter;
+import com.github.florent37.materialviewpager.sample.bean.CardInfo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +46,10 @@ public class RecyclerViewFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);
 
-        final List<Object> items = new ArrayList<>();
+        final List<CardInfo> items = new ArrayList<>();
 
         for (int i = 0; i < ITEM_COUNT; ++i) {
-            items.add(new Object());
+            items.add(new CardInfo());
         }
 
 
@@ -65,4 +66,5 @@ public class RecyclerViewFragment extends Fragment {
         mRecyclerView.addItemDecoration(new MaterialViewPagerHeaderDecorator());
         mRecyclerView.setAdapter(new TestRecyclerViewAdapter(items));
     }
+
 }

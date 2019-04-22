@@ -1,27 +1,246 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_controll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="#009ad6"
         app:navigationIcon="@mipmap/back_ib"
         app:subtitleTextColor="@android:color/white"
         app:title="遥控器"
         app:titleTextColor="@android:color/white"
         >
     </android.support.v7.widget.Toolbar>
-
-    <TextView
+    <android.support.design.widget.TabLayout
+        android:id="@+id/toolbar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009ad6"
+        android:fillViewport="false"
+        app:layout_scrollFlags="scroll"
+        app:tabIndicatorColor="#FFFFFF"
+        app:tabIndicatorHeight="2.0dp"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="#090e21">
+    <android.support.design.widget.TabItem
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="遥控器"
-        android:textSize="20dp"/>
+        android:text="自动"/>
+
+    <android.support.design.widget.TabItem
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="手动"/>
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/control_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/jbshap"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="蓝牙状态："
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接蓝牙"
+                android:textColor="@android:color/holo_blue_dark"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="283dp"
+                android:layout_weight="0.05" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/off"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/off"
+                android:visibility="visible" />
+            <ImageButton
+                android:id="@+id/on"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/on"
+                android:visibility="invisible" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+                <Button
+                    android:id="@+id/rounie"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="揉捏"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/qiaoji"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="敲击"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+                <Button
+                    android:id="@+id/zhiya"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="指压"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/rouqiao"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="揉敲"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="100dp">
+                <Button
+                    android:id="@+id/tuibu"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="腿部"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/shoubi"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/jbshap"
+                    android:text="手臂"
+                    android:textSize="20dp"
+                    android:textColor="#1b315e">
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
 </LinearLayout>
+
+
+
+
+
+
+
+
+
+

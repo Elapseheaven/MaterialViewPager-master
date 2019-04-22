@@ -90,12 +90,14 @@ public class MainActivity extends DrawerActivity  implements NavigationView
                 switch (page) {
                     case 0:
                         return HeaderDesign.fromColorResAndUrl(
-                                R.color.green,
-                                "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
+                                R.color.cyan,
+                                //"http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/android_google_moutain_google_now_1920x1080_wallpaper_Wallpaper-HD_2560x1600_www.paperhi.com_-640x400.jpg");
+                                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555307264082&di=8abcc7a0cb567c98fde54f3a5f7f029e&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01936a58be7362a801219c77fe8358.jpg%402o.jpg");
                     case 1:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.blue,
-                                "http://www.hdiphonewallpapers.us/phone-wallpapers/540x960-1/540x960-mobile-wallpapers-hd-2218x5ox3.jpg");
+//                                "http://www.hdiphonewallpapers.us/phone-wallpapers/540x960-1/540x960-mobile-wallpapers-hd-2218x5ox3.jpg");
+                                "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555306687498&di=b51496b3f12d6f03c0bf3df487942a26&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1209%2F11%2Fc0%2F13783009_1347330674323.jpg");
                     case 2:
                         return HeaderDesign.fromColorResAndUrl(
                                 R.color.cyan,

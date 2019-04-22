@@ -12,9 +12,9 @@
     android:gradientRadius="100"    渐变半径 非线性放射有效
      -->
     <gradient
-        android:startColor="#39D0C0"
-        android:centerColor="#39D0C0"
-        android:endColor="#5CACEE"
+        android:startColor="#009ad6"
+        android:centerColor="#009ad6"
+        android:endColor="#009ad6"
         android:angle="45"
         />
 

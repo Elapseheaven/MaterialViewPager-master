@@ -15,5 +15,53 @@
         android:layout_marginRight="@dimen/cardMarginHorizontal"
         android:layout_marginTop="@dimen/cardMarginVertical"
         app:cardPreventCornerOverlap="false"
-        app:contentPadding="0dp"></android.support.v7.widget.CardView>
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_iv"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="6dp"
+                android:background="@drawable/item_two"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="wrap_content"
+            android:textColor="#383838"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="按摩椅"/>
+
+            <TextView
+            android:id="@+id/item_content_tv"
+            android:textColor="#545454"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="按摩椅，利用机械的滚动力作用和机械力挤压来进行按摩，使血液循环通畅，改善腰酸背痛"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
 </FrameLayout>

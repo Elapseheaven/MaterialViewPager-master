@@ -76,7 +76,6 @@ public class FindingsFragment extends Fragment {
         fl.addView(v);
         return fl;
     }
-
     /**
      * 提供当前Fragment的主色调的Bitmap对象,供Palette解析颜色
      *

@@ -17,7 +17,7 @@ import com.github.florent37.materialviewpager.sample.fragment.FindingsFragment;
 public class FindingsActivity extends BaseActivity {
     private Toolbar toolbar;
     private TabLayout toolbar_tab;
-    private ViewPager main_vp_container;
+    private ViewPager findings_vp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,13 +31,13 @@ public class FindingsActivity extends BaseActivity {
             }
         });
         toolbar_tab = (TabLayout) findViewById(R.id.toolbar_tab);
-        main_vp_container = (ViewPager) findViewById(R.id.main_vp_container);
+        findings_vp = (ViewPager) findViewById(R.id.findings_vp);
 
         FindingsViewPagerAdapter vpAdapter = new FindingsViewPagerAdapter(getSupportFragmentManager(), this);
-        main_vp_container.setAdapter(vpAdapter);
-        toolbar_tab.setupWithViewPager(main_vp_container);
+        findings_vp.setAdapter(vpAdapter);
+        toolbar_tab.setupWithViewPager(findings_vp);
         changeTopBgColor(0);
-        main_vp_container.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        findings_vp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int
                     positionOffsetPixels) {

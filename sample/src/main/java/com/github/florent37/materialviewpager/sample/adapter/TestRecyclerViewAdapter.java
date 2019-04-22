@@ -1,10 +1,14 @@
-package com.github.florent37.materialviewpager.sample;
+package com.github.florent37.materialviewpager.sample.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.florent37.materialviewpager.sample.R;
+import com.github.florent37.materialviewpager.sample.bean.CardInfo;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,12 +16,12 @@ import java.util.List;
  */
 public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    List<Object> contents;
+    List<CardInfo> contents;
 
     static final int TYPE_HEADER = 0;
     static final int TYPE_CELL = 1;
 
-    public TestRecyclerViewAdapter(List<Object> contents) {
+    public TestRecyclerViewAdapter(List<CardInfo> contents) {
         this.contents = contents;
     }
 
@@ -67,4 +71,5 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.V
                 break;
         }
     }
+
 }

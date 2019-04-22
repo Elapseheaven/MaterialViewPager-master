@@ -16,7 +16,27 @@
         app:cardCornerRadius="2dp"
         app:cardElevation="2dp"
         app:cardPreventCornerOverlap="false"
-        app:contentPadding="0dp">
+        app:contentPadding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_iv"
+                android:layout_width="370dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="0dp"
+                android:background="@drawable/item_one"
+                android:scaleType="centerCrop"/>
+
+
+
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 

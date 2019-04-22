@@ -60,4 +60,39 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation 'com.android.support:design:27.1.0'
     implementation 'com.android.support:palette-v7:27.1.0'
+
+//蓝牙包
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.1', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.facebook.litho:litho-core:0.21.0'
+    implementation 'com.facebook.litho:litho-widget:0.21.0'
+    compileOnly 'com.facebook.litho:litho-annotations:0.21.0'
+
+    annotationProcessor 'com.facebook.litho:litho-processor:0.21.0'
+
+    // SoLoader
+    implementation 'com.facebook.soloader:soloader:0.5.1'
+
+    // For integration with Fresco
+    implementation 'com.facebook.litho:litho-fresco:0.21.0'
+
+    // For testing
+    testImplementation 'com.facebook.litho:litho-testing:0.21.0'
+    implementation 'com.qmuiteam:qmui:1.1.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.akexorcist:bluetoothspp:1.0.0'
+    implementation 'com.parse:parse-android:1.13.1'
+
+    // Gson库
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    // OkHttp库
+    compile 'com.squareup.okhttp3:okhttp:3.1.2'
+    // Retrofit库
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+
 }

@@ -4,7 +4,9 @@ import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import com.github.florent37.materialviewpager.sample.fragment.ControlFragment;
+
+import com.github.florent37.materialviewpager.sample.fragment.ControlFragment_auto;
+import com.github.florent37.materialviewpager.sample.fragment.ControlFragment_hand;
 
 public class ControlViewPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 2;
@@ -18,8 +20,9 @@ public class ControlViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return ControlFragment.newInstance(position);
+        return ControlFragment_hand.newInstance(position);
     }
+
 
     @Override
     public int getCount() {
